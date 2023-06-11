@@ -1,0 +1,13 @@
+# To build:
+docker build -t marp-app .
+
+# To run & serve:
+docker run --rm --init -v ${PWD}:/home/marp/app/ -e LANG=$LANG -p 8080:8080 marp-app -s
+
+## To see: http://localhost:8080/
+
+# To convert to HTML:
+marp-app md/index.md
+
+# To convert to PDF:
+marp-app md/index.md --pdf
