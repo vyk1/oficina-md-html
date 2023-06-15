@@ -11,3 +11,7 @@ marp-app md/index.md
 
 # To convert to PDF:
 marp-app md/index.md --pdf
+
+# Serve using python:
+cd html
+python -m http.server 8080
